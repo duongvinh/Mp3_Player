@@ -318,11 +318,9 @@ public class PlayControl extends AbstractView {
                 removeListenersAndBinding(oldValue);
 
             }
+            addListenersAndBindings(newValue);
         }
-
-      //addListenerAndBindings(newVlaue);
-
-    }
+ }
 
     private void removeListenersAndBinding(MediaPlayer mp) {
         volumeSlider.valueProperty().unbind();
